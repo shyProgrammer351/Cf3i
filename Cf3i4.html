@@ -4,7 +4,7 @@
 2진수 1010은 10진수 10입니다. 
 </pre><br><pre class='selectable'>1000부터 1111사이의 2진수를 입력하세요: <b><span style='color:rgb(255,0,0);'>1111</span></b>
 2진수 1111은 10진수 15입니다. 
-</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>프로그램 시작 <br>&nbsp; &nbsp;1000부터 1111사이의 2진수를 입력 <br>&nbsp; &nbsp;2진수의 각 자리수 추출 <br>&nbsp; &nbsp;&nbsp; &nbsp;2진수 1000 = 2^3 = 8의 자리수 <br>&nbsp; &nbsp;&nbsp; &nbsp;2진수 100 = 2^2 = 4의 자리수 <br>&nbsp; &nbsp;&nbsp; &nbsp;2진수 10 = 2^1 = 2의 자리수 <br>&nbsp; &nbsp;&nbsp; &nbsp;2진수 1 = 2^0 = 1의 자리수 <br>&nbsp; &nbsp;2진수 각 자리수의 값을 바탕으로 2진수를 10진수로 변환 <br>&nbsp; &nbsp;2진수를 10진수로 변환한 결과를 출력 <br>프로그램 종료 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='sP3f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter03/BinaryToDecimal.c</font>
+</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>프로그램 시작 <br>&nbsp; &nbsp;1000부터 1111사이의 2진수를 입력 <br>&nbsp; &nbsp;2진수의 각 자리수 2^3, 2^2, 2^1, 2^0을 순서대로 추출 <br>&nbsp; &nbsp;&nbsp; &nbsp;2진수 1000 = 2^3 = 8의 자리수 <br>&nbsp; &nbsp;&nbsp; &nbsp;2진수 100 = 2^2 = 4의 자리수 <br>&nbsp; &nbsp;&nbsp; &nbsp;2진수 10 = 2^1 = 2의 자리수 <br>&nbsp; &nbsp;&nbsp; &nbsp;2진수 1 = 2^0 = 1의 자리수 <br>&nbsp; &nbsp;2진수 각 자리수의 값을 바탕으로 2진수를 10진수로 변환 <br>&nbsp; &nbsp;2진수를 10진수로 변환한 결과를 출력 <br>프로그램 종료 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='sP3f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter03/BinaryToDecimal.c</font>
 </pre><pre id="code0" class="unselectable codeClass">	#include &lt;stdio.h&gt;
 </pre><pre id="code0" class="unselectable codeClass">	 
 </pre><pre id="code0" class="unselectable codeClass">	<font color="green">//<b> 프로그램 시작 </b></font>
@@ -17,7 +17,7 @@
 </pre>
 <pre id="code3" class="unselectable codeClass">3		scanf( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &binary );
 </pre><pre id="code0" class="unselectable codeClass">	 
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 2진수의 각 자리수 추출  </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 2진수의 각 자리수 2^3, 2^2, 2^1, 2^0을 순서대로 추출  </b></font>
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 2진수 1000 = 2^3 = 8의 자리수 </b></font>
 </pre>
 <pre id="code4" class="unselectable codeClass">4		int binary1000 = binary <a href='../Cf4i/Cf4i0.html' target='keyword'>/</a> 1000;
